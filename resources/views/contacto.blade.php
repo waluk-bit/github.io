@@ -80,21 +80,23 @@
                 </div>
             @endif
 
-            <div class="content">
-                <div class="title m-b-md">
-                    Laravel
-                </div>
+            
+            <div class="contenedor">
 
-                <div class="links">
-                    <a href="https://laravel.com/docs">Docs</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://blog.laravel.com">Blog</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
-                </div>
+                <h3 class="footer__contacto--titulo titulo">Contacto</h3>
+
+
+                <form class="footer__form" id="contactoForm" method="post" action="{{ route('EnvioDeMensaje.store')}}">
+                @csrf  
+                    <input class="footer__form-input footer__form-text" type="text" placeholder="Nombre" name="nombre" required>
+                    <input class="footer__form-input footer__form-imail"type="imail" placeholder="Correo" name="correo" required>
+                    <textarea class="footer__form-input footer__form-textarea"name="mensaje" required placeholder="mensaje"></textarea>
+                    <button onclick="document.getElementById('contactoForm').submit();" > Enviar </button>
+                </form>
+
             </div>
+                
+            
         </div>
     </body>
 </html>
