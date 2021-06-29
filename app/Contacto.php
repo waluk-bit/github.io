@@ -8,5 +8,5 @@ class Contacto extends Model
 {
     protected $table = 'contactos';
 
-    protected $fiellable = ['id','Nombre','Imail','Mensaje'];
+    protected $fiellable = ['id','nombre','imail','mensaje'];
 }

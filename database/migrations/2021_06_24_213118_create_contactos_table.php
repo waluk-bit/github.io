@@ -15,9 +15,9 @@ class CreateContactosTable extends Migration
     {
         Schema::create('contactos', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('Nombre');
-            $table->string('Imail');
-            $table->text('Mensaje');
+            $table->string('nombre');
+            $table->string('imail');
+            $table->text('mensaje');
             $table->timestamps();
         });
     }
