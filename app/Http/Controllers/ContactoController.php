@@ -47,7 +47,7 @@ class ContactoController extends Controller
 
         $mensaje->nombre = $request->input('nombre');
         $mensaje->imail = $request->input('correo');
-        $mensaje->mensaje = $request->input('mensaje');
+    
 
         $mensaje->save();
         return Redirect::to('/');

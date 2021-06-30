@@ -1,102 +1,47 @@
-<!doctype html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+@extends('layouts.app')
 
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
-
-        <!-- Styles -->
-        <style>
-            html, body {
-                background-color: #fff;
-                color: #636b6f;
-                font-family: 'Nunito', sans-serif;
-                font-weight: 200;
-                height: 100vh;
-                margin: 0;
-                
-            }
-
-            .full-height {
-                height: 100vh;
-            }
-
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
-
-            .position-ref {
-                position: relative;
-            }
-
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
-
-            .content {
-                text-align: center;
-            }
-
-            .title {
-                font-size: 84px;
-            }
-
-            .links > a {
-                color: #636b6f;
-                padding: 0 25px;
-                font-size: 13px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
-
-            .m-b-md {
-                margin-bottom: 30px;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @auth
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ route('login') }}">Login</a>
-
-                        @if (Route::has('register'))
-                            <a href="{{ route('register') }}">Register</a>
-                        @endif
-                    @endauth
-                </div>
-            @endif
-
-            
-            <div class="contenedor">
-
-                <h3 class="footer__contacto--titulo titulo">Contacto</h3>
+@section('content')
 
 
-                <form class="footer__form" id="contactoForm" method="post" action="{{ route('EnvioDeMensaje.store')}}">
-                @csrf  
-                    <input class="footer__form-input footer__form-text" type="text" placeholder="Nombre" name="nombre" required>
-                    <input class="footer__form-input footer__form-imail"type="imail" placeholder="Correo" name="correo" required>
-                    <textarea class="footer__form-input footer__form-textarea"name="mensaje" required placeholder="mensaje"></textarea>
-                    <button onclick="document.getElementById('contactoForm').submit();"> Enviar </button>
-                </form>
+<div class="container">
 
-            </div>
-                
-            
+    <div class="row">
+    
+        <div class="col-12 ">
+        
+        <h3 class=" footer__contacto--titulo titulo">Contacto</h3>
+
         </div>
-    </body>
-</html>
+
+    </div>
+
+    <div class="row">
+
+        <div class="col-12 ">             
+            <form class="footer__form" id="contactoForm" method="post" action="{{ route('EnvioDeMensaje.store')}}">
+            @csrf
+                <div class="mb-3">
+                        <label for="formGroupExampleInput" class="form-label">Tú Nombre</label>
+                        <input name="nombre" type="text" class="form-control" id="formGroupExampleInput">
+                    </div>
+                <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Tú correo electronico</label>
+                        <input type="email" name="correo" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text">Nunca compartiremos su correo electrónico con nadie más.</div>
+                </div>
+                    
+                <button onclick="document.getElementById('contactoForm').submit();" class="btn btn-primary">Enviar</button>
+            </form>
+        </div>
+
+    </div>
+
+    
+    
+</div>
+
+
+@endsection
+
+        
