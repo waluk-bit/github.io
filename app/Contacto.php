@@ -8,5 +8,6 @@ class Contacto extends Model
 {
     protected $table = "contactos";
 
-    protected $fiellable = ['id','nombre','imail','mensaje'];
+    protected $fillable = ['id','nombre','imail','mensaje'];
+            
 }

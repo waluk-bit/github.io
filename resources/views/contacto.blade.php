@@ -91,7 +91,7 @@
                     <input class="footer__form-input footer__form-text" type="text" placeholder="Nombre" name="nombre" required>
                     <input class="footer__form-input footer__form-imail"type="imail" placeholder="Correo" name="correo" required>
                     <textarea class="footer__form-input footer__form-textarea"name="mensaje" required placeholder="mensaje"></textarea>
-                    <button onclick="document.getElementById('contactoForm').submit();" > Enviar </button>
+                    <button onclick="document.getElementById('contactoForm').submit();"> Enviar </button>
                 </form>
 
             </div>
