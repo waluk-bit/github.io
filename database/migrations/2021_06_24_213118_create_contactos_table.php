@@ -17,6 +17,7 @@ class CreateContactosTable extends Migration
             $table->bigIncrements('id');
             $table->string('nombre');
             $table->string('imail');
+            $table->string('mensaje');
             $table->timestamps();
         });
     }

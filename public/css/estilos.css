@@ -1,0 +1,101 @@
+body{
+    font-family:'Open Sans', sans-serif ;
+
+    padding-top:0px;
+}
+
+
+/* header */
+.header{
+    max-height:500px;
+    background: url(../img/bg.jpg) #49a3d6 no-repeat center ;
+    overflow:hidden;
+}
+
+.header__descripcion{
+    display: flex;
+    margin: 200px 0px;
+    justify-content: center;
+    align-content: center;
+}
+.header__textos{
+    border: 2px solid rgba(255,255,255, 0.5);
+    border-radius: 3px;
+    display: inline-block;
+    text-align: center;
+    padding: 20px 60px;
+    color: #fff;
+}
+
+.lead{
+    font-size:25px;
+}
+
+.container__img{
+    margin-top: -60px;
+}
+
+.container__my-picture{
+    width: 115px;
+    border-radius: 50%;
+    vertical-align: top;
+    border: 5px solid rgba(255,255,255, 0.2);
+}
+
+.container__text{
+    color: #ce7231;
+    font-weight:300;
+}
+
+/* textarea */
+.control__textarea{
+    resize: vertical;
+    max-height: 200px;
+    min-height: 200px;
+}
+/* footer */
+
+.footer {
+    background: #1E2B38 !important;
+    padding:60px 0px;
+    width: 100%;
+}
+
+.footer__prueba{
+    margin-top: 25rem;
+}
+.footer__red-social{
+    color: #fff;
+    text-align: center;
+    width: 100px;
+    display: block;
+    padding: 15px 0px;
+    border-radius: 3px;
+    font-size: 30px;
+    margin:0px 20px;
+}
+
+.red-social-twitter:hover{
+    background: #1da1f2;
+    color: #fff;
+}
+
+.red-social-facebook:hover{
+    background: #3b5998;
+    color: #fff;
+}
+
+.red-social-youtube:hover{
+    background: #ff0000;
+    color: #fff;
+}
+
+.red-social-github:hover{
+    background: #333;
+    color: #fff;
+}
+
+.red-social-instagram:hover{
+    background: #405de6;
+    color: #fff;
+}
