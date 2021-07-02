@@ -23,7 +23,7 @@
         </div>
 
     </header>
-    <div class="container mb-5">
+    <div class="container p-0 mb-5">
 
         <div class="row">
 
@@ -74,7 +74,7 @@
                     </div>
                     
     </div>
-  
+
 @endsection
 
 

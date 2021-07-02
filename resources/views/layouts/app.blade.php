@@ -25,9 +25,9 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/estilos.css') }}" rel="stylesheet">
 </head>
-<body>
+<body class="body">
     <div id="app">
-        <nav class="navbar  navbar-expand-md navbar-light  bg-white shadow-sm">
+        <nav class="navbar  navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container p-0">
                 <a class="navbar-brand text-dark" href="{{ url('/') }}">
                 <i class="fas fa-address-book display-6"></i>
@@ -38,7 +38,7 @@
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
-                   
+
                         <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto ">
                             <li class="nav-item ">
@@ -87,14 +87,12 @@
             <main>
                 @yield('content')
             </main>
-
+            
     </div>
-
 
     @extends('layouts.footer')
 
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -1,7 +1,6 @@
-body{
+.body{
     font-family:'Open Sans', sans-serif ;
-
-    padding-top:0px;
+    width: 100%;
 }
 
 
@@ -55,15 +54,36 @@ body{
 }
 /* footer */
 
-.footer {
-    background: #1E2B38 !important;
-    padding:60px 0px;
-    width: 100%;
+@media (max-width: 768.98px) {
+    .row{
+        margin-right: 0px !important;
+    margin-left: 0px !important;
+    }
+    .footer{
+        background: rgb(30, 43, 56);
+        padding: 60px 0 ;
+    }
+    .footer__red-social{
+        color: #fff;
+        text-align: center;
+        flex: 0 0 auto;
+        width: 100% !important;
+        display: block;
+        padding: 15px 0px;
+        padding-top: 5rem;
+        border-radius: 3px;
+        font-size: 30px;
+        margin:0px 20px;
+        
+    }
+    
+} 
+
+.footer{
+    background: rgb(30, 43, 56);
+    padding: 60px 0 ;
 }
 
-.footer__prueba{
-    margin-top: 25rem;
-}
 .footer__red-social{
     color: #fff;
     text-align: center;
@@ -73,6 +93,7 @@ body{
     border-radius: 3px;
     font-size: 30px;
     margin:0px 20px;
+    
 }
 
 .red-social-twitter:hover{
