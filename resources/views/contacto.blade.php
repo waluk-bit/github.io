@@ -1,3 +1,4 @@
+@extends('layouts.footer')
 
 @extends('layouts.app')
 
@@ -16,9 +17,9 @@
 
     </div>
 
-    <div class="row">
+    <div class="row form__block">
         
-        <div class="col-12 alto ">             
+        <div class="col-12">             
             <form class="footer__form" id="contactoForm" method="post" action="{{ route('EnvioDeMensaje.store')}}">
                 @csrf
                 <div class="mb-3">

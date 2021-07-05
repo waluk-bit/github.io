@@ -9,5 +9,7 @@ class Contacto extends Model
     protected $table = "contactos";
 
     protected $fillable = ['id','nombre','imail','mensaje'];
-            
+
+
+    
 }
