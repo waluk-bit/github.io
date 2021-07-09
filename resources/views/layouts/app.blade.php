@@ -45,7 +45,7 @@
                                 <a class="nav-link " href="#">Acerca de mi</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Mis Trabajos</a>
+                                <a class="nav-link" href="/calculadora">Calculadora</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link " href="contacto">Contáctame</a>

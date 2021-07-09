@@ -4,9 +4,11 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">Dashboard</div>
+        @foreach ($mensajes as $dato)
+            <div class="card mt-5">
 
+                <div class="card-header">Mensaje de: {{$dato->nombre}} numero de mensaje: {{$dato->id}} fecha: {{$dato->created_at}}</div>
+                <h5>Email:{{$dato->imail}}</h5>
                 <div class="card-body">
                     @if (session('status'))
                         <div class="alert alert-success" role="alert">
@@ -14,9 +16,11 @@
                         </div>
                     @endif
 
-                    You are logged in!
+                    {{$dato->mensaje}}
                 </div>
             </div>
+
+        @endforeach
         </div>
     </div>
 </div>
