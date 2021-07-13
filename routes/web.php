@@ -29,6 +29,6 @@ Route::resource('/EnvioDeMensaje', 'ContactoController');
 
 Route::get('/calculadora', 'CalculadoraController@index')->name('calculadora');
 
-Route::resource('/calculadora', 'CalculadoraController'); 
+Route::resource('/calculadora', 'CalculadoraController');
 
-Route::resource('/operaciones', 'Operaciones'); 
+Route::resource('/operaciones', 'Operaciones');

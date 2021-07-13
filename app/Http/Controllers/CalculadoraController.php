@@ -21,33 +21,33 @@ class CalculadoraController extends Controller
         if  ($request->op == '+'){
             $resultado = $request->n1 + $request->n2;
             $dato= new Calculadora;
-            $dato->n1=$request->n1; 
-            $dato->op=$request->op; 
-            $dato->n2=$request->n2; 
+            $dato->n1=$request->n1;
+            $dato->op=$request->op;
+            $dato->n2=$request->n2;
             $dato->save();
             return view('calculadora',['resultado'=> $resultado]);
         }   else if ($request->op == '-'){
             $resultado = $request->n1 - $request->n2;
             $dato= new Calculadora;
-            $dato->n1=$request->n1; 
-            $dato->op=$request->op; 
-            $dato->n2=$request->n2; 
+            $dato->n1=$request->n1;
+            $dato->op=$request->op;
+            $dato->n2=$request->n2;
             $dato->save();
             return view('calculadora',['resultado'=> $resultado]);
         }else if ($request->op == '*'){
             $resultado = $request->n1 * $request->n2;
             $dato= new Calculadora;
-            $dato->n1=$request->n1; 
-            $dato->op=$request->op; 
-            $dato->n2=$request->n2; 
+            $dato->n1=$request->n1;
+            $dato->op=$request->op;
+            $dato->n2=$request->n2;
             $dato->save();
             return view('calculadora',['resultado'=> $resultado]);
         } else if($request->op == '/'){
             $resultado = $request->n1 / $request->n2;
             $dato= new Calculadora;
-            $dato->n1=$request->n1; 
-            $dato->op=$request->op; 
-            $dato->n2=$request->n2; 
+            $dato->n1=$request->n1;
+            $dato->op=$request->op;
+            $dato->n2=$request->n2;
             $dato->save();
             return view('calculadora',['resultado'=> $resultado]);
         }
