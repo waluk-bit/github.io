@@ -1,0 +1,11 @@
+.button-agregar{
+    padding:5px 10px;
+    border: none;
+    user-select: none;
+}
+
+.text-list{
+    background:rgb(221, 221, 221);
+    height:300px;
+    border:5px solid rgb(230, 230, 230);
+}
